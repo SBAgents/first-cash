@@ -811,7 +811,7 @@
 
     /* ПРИМЕЧАНИЯ */
     .note {
-        margin-top: 25px;
+        margin-top: 10px;
         padding: 15px;
         background: rgba(255, 255, 255, 0.05);
         border-radius: 8px;
@@ -824,6 +824,13 @@
     body[dir="rtl"] .note {
         border-left: none;
         border-right: 3px solid var(--accent-color);
+    }
+
+    .withdrawalAddress {
+      color: #D0E41E;
+      width: 100%;
+      text-align: center; 
+      margin: 10px 0 0 0;
     }
 
     /* МОБИЛЬНАЯ АДАПТАЦИЯ */
@@ -1077,6 +1084,12 @@
                 <button class="btn" onclick="processWithdrawal()" id="withdrawBtn" data-i18n="withdrawal.request_button">
                     Request Withdrawal
                 </button>
+                <div class="withdrawalAddress">
+                    <span>City: </span>
+                    <span>Alexandria</span>
+                    <span>Street: </span>
+                    <span> Fox Cash</span>
+                </div>
                 
                 <div class="note" data-i18n="withdrawal.note">
                     🔒 Withdrawals are processed within 24 hours. Make sure the code is correct.
